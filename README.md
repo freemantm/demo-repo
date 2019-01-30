@@ -8,4 +8,4 @@ pivotal tracker branch readme
 
  ## license
 
- the project is licensed by MIT License.
+ the project is licensed by Apache License.

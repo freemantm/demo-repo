@@ -14,7 +14,7 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 steps:
-  script: 'dotnet restore'
+  - script: 'dotnet restore'
 - task: ArchiveFiles@2
   inputs:
     rootFolderOrFile: '$(build.sourcesDirectory)'

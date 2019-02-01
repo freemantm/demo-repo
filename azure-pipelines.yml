@@ -14,4 +14,8 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 steps:
-  - script: 'dotnet restore'
+  - task: DotNetCoreInstaller@0
+    inputs:
+        version: '2.2'
+  - script: 'dotnet restore ./PipelineChallenge/PipelineChallenge.sln'
+  - script: 'dotnet build ./PipelineChallenge/PipelineChallenge.sln'

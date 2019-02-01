@@ -16,6 +16,6 @@ pool:
 steps:
   - task: DotNetCoreInstaller@0
     inputs:
-        version: '2.2'
+        version: '2.2.103'
   - script: 'dotnet restore ./PipelineChallenge/PipelineChallenge.sln'
   - script: 'dotnet build ./PipelineChallenge/PipelineChallenge.sln'

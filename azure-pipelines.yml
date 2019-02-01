@@ -8,10 +8,10 @@ trigger:
 
 pr:
   - 'azure-pipelines'
-  - '\d{9,}-*'
 
 pool:
   vmImage: 'Ubuntu-16.04'
 
 steps:
   - script: 'dotnet restore ./PipelineChallenge/PipelineChallenge.sln'
+  - script: 'dotnet build ./PipelineChallenge/PipelineChallenge.sln'

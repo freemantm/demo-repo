@@ -15,8 +15,3 @@ pool:
 
 steps:
   - script: 'dotnet restore'
-- task: ArchiveFiles@2
-  inputs:
-    rootFolderOrFile: '$(build.sourcesDirectory)'
-    includeRootFolder: false
-- task: PublishBuildArtifacts@1
